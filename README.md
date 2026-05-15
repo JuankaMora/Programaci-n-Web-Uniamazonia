@@ -97,7 +97,7 @@ npm run preview
 
 ## Deploy
 
-El proyecto puede desplegarse en Vercel o Netlify usando la configuracion estandar de Vite:
+El proyecto puede desplegarse en Vercel estandar de Vite:
 
 ```txt
 Build command: npm run build
@@ -107,9 +107,9 @@ Output directory: dist
 URL del deploy:
 
 ```txt
-Pendiente por agregar
+https://programaci-n-web-uniamazonia.vercel.app
 ```
 
 ## Autor
 
-Juan Mora
+Juan Carlos Mora Rojas
