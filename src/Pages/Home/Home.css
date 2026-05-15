@@ -1,0 +1,113 @@
+.home-container {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.home-subtitle {
+    margin-bottom: 32px !important;
+    color: #6b7132 !important;
+}
+
+.home-search {
+    margin-bottom: 20px;
+}
+
+.home-alert {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.home-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.home-pagination .MuiPagination-root {
+    margin-top: 24px;
+}
+
+.home-pagination .MuiButtonBase-root {
+    color: #3ee2ff;
+}
+
+.home-pagination .MuiButtonBase-root:hover {
+    background-color: rgba(62, 226, 255, 0.1);
+}
+
+.home-pagination .Mui-selected {
+    background-color: #3ee2ff !important;
+    color: #081214 !important;
+}
+
+.home-pagination .MuiIconButton-colorInherit {
+    color: #3ee2ff;
+}
+
+.home-page {
+    display: grid;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.home-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    padding: 22px 24px;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.home-header h1 {
+    margin: 0;
+    font-size: clamp(1.75rem, 3vw, 2.4rem);
+}
+
+.home-header p {
+    margin: 8px 0 0;
+    color: #d6e9ff;
+}
+
+.home-count {
+    color: #b8e9ff;
+    font-size: 0.95rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.character-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+/* Override Material-UI Grid styles to match Filtrado size */
+.home-container .MuiGrid-item {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.home-container .MuiGrid-container {
+    margin: 0 !important;
+    width: 100% !important;
+}
+
+.home-error,
+.filter-error {
+    padding: 20px;
+    border-radius: 20px;
+    background: rgba(255, 30, 70, 0.12);
+    color: #ffcdd2;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.home-empty,
+.filter-empty {
+    padding: 24px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    color: #d6e9ff;
+}

@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'Get Schwifty';
+    src: local('Get Schwifty'),
+         url('../../assets/fonts/get_schwifty.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.footer-text {
+    margin: 0;
+    flex: 1;
+    text-align: center;
+    color: #061021;
+    font-family: 'Get Schwifty', sans-serif !important;
+    font-size: 32px;
+}
+
+.app-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #97ce4c;
+    padding: 20px 0;
+}
+
+.footer-image {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+    background-color: transparent;
+    mix-blend-mode: multiply;
+}
+
+.footer-image-left {
+    margin-left: 20%;
+}
+
+.footer-image-right {
+    margin-right: 20%;
+}
+
+.estilo-caotico {
+    font-family: 'Get Schwifty', sans-serif;
+}
+
+/* @font-face {
+    font-family: 'Get Schwifty';
+    src: local('Get Schwifty'), local('get_schwifty');
+} */
+
+@media (max-width: 720px) {
+    .app-footer {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 18px 0;
+    }
+
+    .footer-image-left,
+    .footer-image-right {
+        margin: 12px 0;
+    }
+
+    .footer-text {
+        width: 100%;
+        padding: 0 16px;
+    }
+}

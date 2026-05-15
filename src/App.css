@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+.app-shell {
+  min-height: 100vh;
+  /* Asegura que cubra el alto total de la pantalla */
+  display: flex;
+  flex-direction: column;
+
+  background:
+    linear-gradient(180deg, rgba(16, 32, 61, 0.8) 0%, rgba(8, 18, 36, 0.88) 100%, rgba(5, 11, 22, 0.92) 100%),
+    radial-gradient(circle at top, rgba(255, 213, 0, 0.18), transparent 75%),
+    url('/img/fondo.jpg');
+
+  color: #fff;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* CAMBIO CLAVE: Todos los fondos ahora usan 'cover' */
+  background-size: cover;
+}
+
+.app-content {
+  width: min(1200px, calc(100% - 32px));
+  margin: 0 auto 40px;
+  padding: 0 0 16px;
+}
+
+@media (max-width: 640px) {
+  .app-content {
+    width: min(100%, calc(100% - 16px));
+  }
+}
+
+/* body {
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background:
+    linear-gradient(180deg, rgba(16, 32, 61, 0.8) 0%, rgba(8, 18, 36, 0.88) 55%, rgba(5, 11, 22, 0.92) 100%),
+    radial-gradient(circle at top, rgba(255, 213, 0, 0.18), transparent 30%),
+    url('/img/Shen_Long.webp');
+  color: #fff;
+  background-attachment: fixed;
+  background-position: center top, center top, center center;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: cover, cover, contain;
+} */

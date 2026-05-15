@@ -1,0 +1,162 @@
+.rick-page {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 32px 0 48px;
+}
+
+.rick-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.rick-heading h1 {
+  margin: 4px 0 0;
+  font-size: 3.2rem;
+  line-height: 1.05;
+}
+
+.eyebrow {
+  color: #2f7d32;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.character-count {
+  flex: 0 0 auto;
+  border: 1px solid #d6dee2;
+  border-radius: 8px;
+  color: #263238;
+  font-weight: 700;
+  padding: 8px 12px;
+}
+
+.species-panel {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  margin-bottom: 24px;
+  padding: 16px;
+  border: 1px solid #d6dee2;
+  border-radius: 8px;
+  background: #f7fbfc;
+}
+
+.species-panel label {
+  color: #263238;
+  font-weight: 700;
+}
+
+.species-panel select {
+  min-width: 240px;
+  border: 1px solid #b9c8cf;
+  border-radius: 6px;
+  background: #fff;
+  color: #263238;
+  font: inherit;
+  padding: 8px 10px;
+}
+
+.status-message {
+  border: 1px solid #d6dee2;
+  border-radius: 8px;
+  color: #263238;
+  margin: 32px auto;
+  padding: 24px;
+  text-align: center;
+}
+
+.error-message {
+  border-color: #f2b8b5;
+  background: #fff5f5;
+}
+
+.error-message h2 {
+  color: #a4231f;
+}
+
+.character-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.character-card {
+  overflow: hidden;
+  border: 1px solid #d6dee2;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 12px 24px rgba(30, 48, 58, 0.08);
+  text-align: left;
+}
+
+.character-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.character-info {
+  padding: 16px;
+}
+
+.character-info h2 {
+  min-height: 2.4em;
+  margin: 0 0 14px;
+  font-size: 1.15rem;
+  line-height: 1.2;
+}
+
+.character-info dl {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+}
+
+.character-info div {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  border-top: 1px solid #eef2f3;
+  padding-top: 8px;
+}
+
+.character-info dt {
+  color: #64747b;
+  font-size: 0.9rem;
+}
+
+.character-info dd {
+  margin: 0;
+  color: #263238;
+  font-weight: 700;
+  text-align: right;
+}
+
+@media (max-width: 700px) {
+  .rick-heading h1 {
+    font-size: 2rem;
+  }
+
+  .rick-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .species-panel {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .species-panel select {
+    min-width: 0;
+    width: 100%;
+  }
+}

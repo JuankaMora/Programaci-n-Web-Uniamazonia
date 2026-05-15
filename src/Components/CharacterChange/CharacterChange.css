@@ -1,0 +1,65 @@
+.character-change {
+    display: grid;
+    gap: 18px;
+    padding: 24px 0 40px;
+    justify-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.character-change-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    justify-content: center;
+}
+
+.character-change-button {
+    border: none;
+    border-radius: 999px;
+    padding: 12px 22px;
+    background: rgba(62, 226, 255, 0.16);
+    color: #d9f7ff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 160ms ease, transform 160ms ease;
+}
+
+.character-change-button:hover:not(:disabled) {
+    background: rgba(62, 226, 255, 0.35);
+    transform: translateY(-1px);
+}
+
+.character-change-button:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
+.character-change-back {
+    display: inline-flex;
+    padding: 12px 20px;
+    border-radius: 999px;
+    background: #3ee2ff;
+    color: #061021;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.character-change-back:hover {
+    background: #2eb6db;
+}
+/* CSS Extra opcional */
+.keyboard-hint {
+    font-size: 0.7rem;
+    opacity: 0.6;
+    text-transform: uppercase;
+    margin: 0 5px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+@media (max-width: 600px) {
+    .keyboard-hint { display: none; } /* Ocultar en móviles */
+}
